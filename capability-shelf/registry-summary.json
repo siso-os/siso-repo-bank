@@ -1,0 +1,207 @@
+{
+  "schema_version": "actionist.capability-source-registry.v2",
+  "generated_at": "2026-08-29",
+  "status": "stage_0_discovery_append_with_industry_scope_preserved_not_qualification",
+  "counts": {
+    "total_sources": 3010,
+    "prior_registry_sources": 2433,
+    "preserved_non_discovery_sources": 191,
+    "cumulative_stage_0_sources": 2819,
+    "night_discovery_stage_0_sources": 577,
+    "night_discovery_candidate_rows": 535,
+    "night_discovery_reference_only_generic_rows": 42,
+    "observed_industry_join_sources": 122,
+    "no_observed_industry_join_sources": 2888,
+    "admitted_sources": 0,
+    "not_admitted_sources": 3010
+  },
+  "intake": {
+    "previous_mass_intake_registry_rows": 2433,
+    "night_discovery_input_rows": 577,
+    "night_discovery_unique_urls": 577,
+    "night_discovery_shelf_overlap_before_intake": 0,
+    "post_intake_registry_rows": 3010,
+    "post_intake_cumulative_stage_0_sources": 2819,
+    "candidate_pool_union_before_gap_fill": 2338,
+    "candidate_pool_union_before_industry_join": 2356,
+    "industry_observed_slots": 750,
+    "industry_observed_distinct_repositories": 122,
+    "industry_reserved_slots_not_joined": 16250,
+    "per_industry_discovery_deltas": {
+      "accounting_firms": {
+        "observed_slots_before": 45,
+        "discovery_tagged_rows_before": 0,
+        "added_discovery_rows": 16,
+        "added_candidate_rows": 16,
+        "added_reference_only_generic_rows": 0,
+        "discovery_tagged_rows_after": 16
+      },
+      "construction": {
+        "observed_slots_before": 53,
+        "discovery_tagged_rows_before": 0,
+        "added_discovery_rows": 13,
+        "added_candidate_rows": 13,
+        "added_reference_only_generic_rows": 0,
+        "discovery_tagged_rows_after": 13
+      },
+      "course_creators": {
+        "observed_slots_before": 59,
+        "discovery_tagged_rows_before": 0,
+        "added_discovery_rows": 15,
+        "added_candidate_rows": 15,
+        "added_reference_only_generic_rows": 0,
+        "discovery_tagged_rows_after": 15
+      },
+      "ecommerce": {
+        "observed_slots_before": 45,
+        "discovery_tagged_rows_before": 0,
+        "added_discovery_rows": 33,
+        "added_candidate_rows": 33,
+        "added_reference_only_generic_rows": 0,
+        "discovery_tagged_rows_after": 33
+      },
+      "education_training": {
+        "observed_slots_before": 41,
+        "discovery_tagged_rows_before": 0,
+        "added_discovery_rows": 24,
+        "added_candidate_rows": 24,
+        "added_reference_only_generic_rows": 0,
+        "discovery_tagged_rows_after": 24
+      },
+      "healthcare_medical_practices": {
+        "observed_slots_before": 45,
+        "discovery_tagged_rows_before": 0,
+        "added_discovery_rows": 13,
+        "added_candidate_rows": 13,
+        "added_reference_only_generic_rows": 0,
+        "discovery_tagged_rows_after": 13
+      },
+      "hospitality": {
+        "observed_slots_before": 48,
+        "discovery_tagged_rows_before": 0,
+        "added_discovery_rows": 15,
+        "added_candidate_rows": 15,
+        "added_reference_only_generic_rows": 0,
+        "discovery_tagged_rows_after": 15
+      },
+      "it_services_msps": {
+        "observed_slots_before": 51,
+        "discovery_tagged_rows_before": 0,
+        "added_discovery_rows": 12,
+        "added_candidate_rows": 12,
+        "added_reference_only_generic_rows": 0,
+        "discovery_tagged_rows_after": 12
+      },
+      "insurance_agencies": {
+        "observed_slots_before": 55,
+        "discovery_tagged_rows_before": 0,
+        "added_discovery_rows": 12,
+        "added_candidate_rows": 12,
+        "added_reference_only_generic_rows": 0,
+        "discovery_tagged_rows_after": 12
+      },
+      "law_firms": {
+        "observed_slots_before": 47,
+        "discovery_tagged_rows_before": 0,
+        "added_discovery_rows": 14,
+        "added_candidate_rows": 14,
+        "added_reference_only_generic_rows": 0,
+        "discovery_tagged_rows_after": 14
+      },
+      "logistics_freight": {
+        "observed_slots_before": 45,
+        "discovery_tagged_rows_before": 0,
+        "added_discovery_rows": 16,
+        "added_candidate_rows": 16,
+        "added_reference_only_generic_rows": 0,
+        "discovery_tagged_rows_after": 16
+      },
+      "marketing_social_media_agencies": {
+        "observed_slots_before": 3,
+        "discovery_tagged_rows_before": 0,
+        "added_discovery_rows": 49,
+        "added_candidate_rows": 49,
+        "added_reference_only_generic_rows": 0,
+        "discovery_tagged_rows_after": 49
+      },
+      "mortgage_brokers": {
+        "observed_slots_before": 39,
+        "discovery_tagged_rows_before": 0,
+        "added_discovery_rows": 16,
+        "added_candidate_rows": 16,
+        "added_reference_only_generic_rows": 0,
+        "discovery_tagged_rows_after": 16
+      },
+      "property_management": {
+        "observed_slots_before": 9,
+        "discovery_tagged_rows_before": 0,
+        "added_discovery_rows": 31,
+        "added_candidate_rows": 31,
+        "added_reference_only_generic_rows": 0,
+        "discovery_tagged_rows_after": 31
+      },
+      "real_estate": {
+        "observed_slots_before": 58,
+        "discovery_tagged_rows_before": 0,
+        "added_discovery_rows": 15,
+        "added_candidate_rows": 15,
+        "added_reference_only_generic_rows": 0,
+        "discovery_tagged_rows_after": 15
+      },
+      "recruiting_staffing": {
+        "observed_slots_before": 50,
+        "discovery_tagged_rows_before": 0,
+        "added_discovery_rows": 16,
+        "added_candidate_rows": 16,
+        "added_reference_only_generic_rows": 0,
+        "discovery_tagged_rows_after": 16
+      },
+      "saas": {
+        "observed_slots_before": 57,
+        "discovery_tagged_rows_before": 0,
+        "added_discovery_rows": 12,
+        "added_candidate_rows": 12,
+        "added_reference_only_generic_rows": 0,
+        "discovery_tagged_rows_after": 12
+      }
+    },
+    "cross_industry_discovery_delta": {
+      "discovery_tagged_rows_before": 0,
+      "added_cross_industry_rows": 255,
+      "discovery_tagged_rows_after": 255
+    }
+  },
+  "boundary": {
+    "research_only": true,
+    "stage_0_no_judgment": true,
+    "implementation_authorized": false,
+    "source_execution_authorized": false,
+    "rvm_rerun": true,
+    "rvm_review_status": "PASS_UNDERDETERMINED_EXISTING_EVIDENCE_ONLY",
+    "rvm_review_assessment_contexts": 565,
+    "rvm_review_shape_evaluations": 2825,
+    "rvm_review_numeric_scores": 0,
+    "rvm_review_receipt": "research/workstreams/2026-08-28-program-driver/shelf-prebake/rvm-review-sheet-2026-08-29.json",
+    "rvm_review_human_sheet": "research/workstreams/2026-08-28-program-driver/shelf-prebake/rvm-review-sheet-2026-08-29.md",
+    "rvm_review_verification": "research/workstreams/2026-08-28-program-driver/shelf-prebake/rvm-review-sheet-2026-08-29-verification.json",
+    "rvm_review_02_status": "PASS_TRIAGE_OVERLAY_RVM_UNDERDETERMINED",
+    "rvm_review_02_raw_industry_tagged_rows": 322,
+    "rvm_review_02_contaminated_rows": 25,
+    "rvm_review_02_effective_industry_tagged_rows": 297,
+    "rvm_review_02_triage_scored_rows": 297,
+    "rvm_review_02_relevance_audit": "research/workstreams/2026-08-28-program-driver/shelf-prebake/rvm-review-02-relevance-audit.json",
+    "rvm_review_02_receipt": "research/workstreams/2026-08-28-program-driver/shelf-prebake/rvm-review-02-2026-08-29.json",
+    "rvm_review_02_human_sheet": "research/workstreams/2026-08-28-program-driver/shelf-prebake/rvm-review-02-2026-08-29.md",
+    "rvm_review_02_verification": "research/workstreams/2026-08-28-program-driver/shelf-prebake/rvm-review-02-verification.json",
+    "raw_registry_mutated": false,
+    "conversion_started": false,
+    "solver_rerun_started": false,
+    "admitted_sources": 0
+  },
+  "receipts": {
+    "prior_mass_intake": "research/workstreams/2026-08-28-program-driver/shelf-prebake/mass-intake-receipt.json",
+    "night_discovery_intake": "research/workstreams/2026-08-28-program-driver/shelf-prebake/discovery-577-stage0-intake-receipt.json",
+    "night_discovery_verification": "research/workstreams/2026-08-28-night-discovery-verticals/verification-receipt.json",
+    "night_discovery_quality": "research/workstreams/2026-08-28-night-discovery-verticals/quality-audit.json"
+  }
+}

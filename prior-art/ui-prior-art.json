@@ -1,0 +1,357 @@
+{
+  "$schema": "SISO UI Base — prior-art clone manifest. Feed to clone.sh to vendor every repo for code study.",
+  "version": "1.0",
+  "generatedAt": "2026-06-01",
+  "purpose": "Catalog of GitHub prior art for the SISO UI Base — an internal, domain-tuned forge->rank->vote loop for AI-generated UI. Each entry is cloneable + annotated with the exact pattern we intend to embed.",
+  "families": {
+    "A-taste-gate": "Encode design taste as a gate (rules/skills/critique) — impeccable's category",
+    "B-visual-judge": "Auto-score a UI screenshot like a designer would — the ranker layer",
+    "C-registry": "Machine-readable component/token contracts — distribution layer",
+    "D-flow-dashboard": "Flow-map + inventory + no-framework local dashboard patterns",
+    "E-forge-mcp": "AI generation + MCP surfaces + human-in-the-loop inbox",
+    "F-viewer": "The VIEWER/APP/GALLERY layer — the thing you RUN and look at (grid, safe iframe render, compare, folder->viewer data flow)"
+  },
+  "repos": [
+    {
+      "id": "impeccable",
+      "name": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "stars": 32000,
+      "family": "A-taste-gate",
+      "keystone": true,
+      "what": "The design language that makes an AI coding agent better at design. 7 domain ref files + 23 /impeccable commands + `npx impeccable detect` CLI.",
+      "mechanism": "27 deterministic anti-pattern rules + 12-rule LLM critique catching 24 classes of AI slop (gradient text, glassmorphism, Inter overuse, pure black, cramped padding). 10+ harnesses incl Claude Code.",
+      "steal": "Anti-pattern detector as a PRE-VOTE gate — only screenshots passing the rules surface to humans. Kill slop at the forge, not the review.",
+      "license": "Apache-2.0",
+      "skillInstalled": true
+    },
+    {
+      "id": "taste-skill",
+      "name": "leonxlnx/taste-skill",
+      "url": "https://github.com/leonxlnx/taste-skill",
+      "stars": 30300,
+      "family": "A-taste-gate",
+      "what": "Portable SKILL.md files giving AI agents design taste across React/Vue/Svelte.",
+      "mechanism": "Instruction files loaded by Claude Code/Cursor/Codex. Three tunable dials VARIANCE/MOTION/DENSITY (1-10), pre-flight checklist, hard bans, redesign-audit protocol.",
+      "steal": "The DIAL SYSTEM — expose VARIANCE/MOTION/DENSITY as numeric knobs in the forge->vote loop so voters tune the taste budget, not just approve/reject."
+    },
+    {
+      "id": "aislop",
+      "name": "scanaislop/aislop",
+      "url": "https://github.com/scanaislop/aislop",
+      "stars": 277,
+      "family": "A-taste-gate",
+      "what": "Engineering quality gate catching what AI agents leave behind — narrative comments, swallowed exceptions, as-any casts, dead code.",
+      "mechanism": "Deterministic, no runtime LLM. Six parallel engines (Formatting/Linting/Quality/AI-Slop/Security/Architecture) via Regex+AST+Biome/oxlint/knip/ruff. Scores 0-100, auto-fixes mechanical, hands rest to an agent.",
+      "steal": "The 0-100 SCORED GATE with per-engine breakdown — single numeric score the vote reads; vote when < threshold, ship when >= threshold."
+    },
+    {
+      "id": "pencilplaybook",
+      "name": "stevembarclay/pencilplaybook",
+      "url": "https://github.com/stevembarclay/pencilplaybook",
+      "stars": 26,
+      "family": "A-taste-gate",
+      "what": "Taste skill embedding perceptual design rules as lookup tables Claude consults before every decision.",
+      "mechanism": "Rules from perceptual psychology with explicit numeric thresholds: disabled opacity=40% (not 50%), hover needs >=8% lightness delta, dark-bg text=#E2E8F0 not #FFF (halation), display type 56px+ gets -0.03em tracking.",
+      "steal": "MEASURABLE THRESHOLDS — turn soft aesthetic opinions into CI-ready deterministic assertions. Run each threshold as a gate."
+    },
+    {
+      "id": "designpowers",
+      "name": "Owl-Listener/designpowers",
+      "url": "https://github.com/Owl-Listener/designpowers",
+      "stars": 184,
+      "family": "A-taste-gate",
+      "what": "10 specialist design agents running a full inclusive design process (Discover->Strategise->Design->Build->Taste Check->Review->Fix->Ship).",
+      "mechanism": "36 SKILL.md files, two parallel review agents post-build (WCAG/COGA evaluator + Nielsen heuristics evaluator). Auto mode halts on critical a11y failures.",
+      "steal": "TWO-REVIEWER PARALLELISM — one rules-based (WCAG/thresholds), one LLM judge (aesthetic heuristics), both must pass."
+    },
+    {
+      "id": "design-skill-os",
+      "name": "frhscopex/design-skill-os",
+      "url": "https://github.com/frhscopex/design-skill-os",
+      "stars": 33,
+      "family": "A-taste-gate",
+      "what": "Installable SKILL.md injecting design wisdom from 10+ design books + 161+ industry rules into Claude/Cursor/Windsurf.",
+      "mechanism": "SKILL.md reasoning layer + Red Team audit (adversarial WCAG AA + strip lazy AI trends). Rules segmented by vertical (SaaS/Fintech/Luxury/Healthcare).",
+      "steal": "VERTICAL SEGMENTATION — load the relevant vertical rule set at generation time, not a single universal taste. Ours = performer-cockpit."
+    },
+    {
+      "id": "design-cognition-skill",
+      "name": "S0ulFood/design-cognition-skill",
+      "url": "https://github.com/S0ulFood/design-cognition-skill",
+      "stars": 23,
+      "family": "A-taste-gate",
+      "what": "Four-role design thinking framework: Strategist / Researcher / Executor / Critic.",
+      "mechanism": "Roles activate contextually, share DESIGN-COGNITION.md with six epistemic operations. Critic evaluates artifacts + cross-checks other roles; must find structural failures not style nits.",
+      "steal": "The CRITIC ROLE as an explicit adversarial pipeline stage after every Executor output."
+    },
+    {
+      "id": "styleseed",
+      "name": "bitjaru/styleseed",
+      "url": "https://github.com/bitjaru/styleseed",
+      "stars": 383,
+      "family": "A-taste-gate",
+      "what": "Design system for Claude Code + Cursor: 69 explicit rules, 48 shadcn components, brand skins (Toss/Stripe/Linear/Vercel/Notion), Tailwind v4.",
+      "mechanism": "DESIGN-LANGUAGE.md encodes judgment (shadows at 4% opacity, one accent color, refined black #2A2A2A not #000). Rules brand-agnostic; swappable theme.css skins add identity.",
+      "steal": "The ENGINE/SKIN SPLIT — brand-agnostic rules engine + hot-swappable skin layer. Forge outputs engine; clients vote on skins. Reusable across all 40 models."
+    },
+    {
+      "id": "design-critique-mcp",
+      "name": "haasonsaas/design-critique-mcp",
+      "url": "https://github.com/haasonsaas/design-critique-mcp",
+      "stars": 5,
+      "family": "A-taste-gate",
+      "what": "MCP server analyzing design screenshots — composition, color harmony, typography, WCAG — returns 0-100 + recommendations.",
+      "mechanism": "Screenshot -> analyzers (sharp / chroma-js / Tesseract.js) -> structured JSON critique. Tools: critique_design, analyze_color_scheme/layout/typography/accessibility. 2-5s/image.",
+      "steal": "SCREENSHOT-IN, STRUCTURED-JSON-OUT as an MCP — screenshot every variant, gate on the 0-100 before surfacing to a human."
+    },
+    {
+      "id": "deepeval",
+      "name": "confident-ai/deepeval",
+      "url": "https://github.com/confident-ai/deepeval",
+      "stars": 15800,
+      "family": "B-visual-judge",
+      "weekendStart": true,
+      "what": "LLM eval framework (pytest-style) with a Multimodal G-Eval metric for image inputs.",
+      "mechanism": "Multimodal G-Eval: define criteria in natural language; judge LLM (GPT-4o/Claude) gets screenshot + criteria + CoT steps -> 0-1 float. Fully configurable rubric.",
+      "steal": "Wrap our Playwright screenshot harness; define a GEval criterion 'warmth/playfulness/clarity of cam-model cockpit' and run in CI per variation batch. THE weekend-viable starting point — no training data."
+    },
+    {
+      "id": "promptfoo",
+      "name": "promptfoo/promptfoo",
+      "url": "https://github.com/promptfoo/promptfoo",
+      "stars": 21800,
+      "family": "B-visual-judge",
+      "what": "CLI + CI eval harness comparing LLM outputs; supports vision providers + browser CDP screenshots.",
+      "mechanism": "llm-rubric assertion: write a natural-language rubric, judge model scores; any vision model as judge; matrix comparison across prompt variants.",
+      "steal": "Browser provider captures a screenshot per variant, llm-rubric per aesthetic dimension -> RANKED MATRIX across all variants in one CLI call."
+    },
+    {
+      "id": "q-align",
+      "name": "Q-Future/Q-Align",
+      "url": "https://github.com/Q-Future/Q-Align",
+      "stars": 598,
+      "family": "B-visual-judge",
+      "longTermRanker": true,
+      "what": "ICML 2024 all-in-one visual quality model (IQA+IAA+VQA); fine-tunes an LMM with discrete text levels.",
+      "mechanism": "LMM predicts discrete level (bad/poor/fair/good/excellent); inference extracts weighted token log-probs -> continuous float. SOTA on 12 benchmarks.",
+      "steal": "DISCRETE-LEVEL FINE-TUNING — fine-tune on ~50 hand-rated cockpit screenshots ('performer warmth: poor/fair/good/excellent') -> a ranker calibrated to SHAAN's taste. The long-term production scorer.",
+      "license": "open weights"
+    },
+    {
+      "id": "uiclip",
+      "name": "uimodeling/UIClip",
+      "url": "https://uimodeling.github.io/uiclip/",
+      "altUrl": "https://arxiv.org/abs/2404.12500",
+      "stars": null,
+      "family": "B-visual-judge",
+      "researchOnly": true,
+      "what": "CLIP B/32 fine-tuned in 4 stages on 2.3M UI screenshots + 1,200 designer ratings (UIST 2024). Weights on HuggingFace.",
+      "mechanism": "Cosine similarity between UI screenshot embedding + text description embedding -> continuous design-quality score. Trained contrastively on (original, jittered-defect) pairs.",
+      "steal": "The JITTER TRICK — generate hundreds of inferior cockpit variants cheaply (degrade color/contrast/spacing) as negative anchors; calibrate a ranker with few human labels."
+    },
+    {
+      "id": "uicrit",
+      "name": "google-research-datasets/uicrit",
+      "url": "https://github.com/google-research-datasets/uicrit",
+      "stars": 25,
+      "family": "B-visual-judge",
+      "what": "Google/Berkeley dataset: 3,059 human critiques + 1-10 aesthetic/usability/overall scores for 1,000 mobile UI screenshots (UIST 2024).",
+      "mechanism": "Human annotators rate 1-10 on aesthetics/usability/overall; bounding boxes tie critiques to regions; fine-tuning LMMs gave +55% feedback-quality gain.",
+      "steal": "REGION-PINNED CRITIQUE — fine-tune so the scorer returns a number AND a region-pinned critique you can show Shaan ('this corner is the problem')."
+    },
+    {
+      "id": "aesthetic-predictor-v2-5",
+      "name": "discus0434/aesthetic-predictor-v2-5",
+      "url": "https://github.com/discus0434/aesthetic-predictor-v2-5",
+      "stars": 418,
+      "family": "B-visual-judge",
+      "what": "SigLIP-based aesthetic scorer (1-10), broader domain coverage than LAION (illustrations, stylized art).",
+      "mechanism": "SigLIP image encoder -> MLP head -> float score; generalizes beyond photographic aesthetics.",
+      "steal": "FAST PRE-FILTER calibrated for STYLIZED content (our glossy-candy look) — drop disasters in <10ms before the expensive VLM judge runs."
+    },
+    {
+      "id": "nima",
+      "name": "idealo/image-quality-assessment",
+      "url": "https://github.com/idealo/image-quality-assessment",
+      "stars": 2200,
+      "family": "B-visual-judge",
+      "archived": true,
+      "what": "TF implementation of Google NIMA — aesthetic (AVA) + technical (TID2013) quality models.",
+      "mechanism": "CNN predicts the FULL distribution of human ratings 1-10 (Earth Mover's Distance loss) -> mean + std.",
+      "steal": "RATING-DISTRIBUTION output (mean + variance) — high variance = polarizing design, low variance = safe. Filter out high-risk designs before the human vote."
+    },
+    {
+      "id": "lighthouse",
+      "name": "GoogleChrome/lighthouse",
+      "url": "https://github.com/GoogleChrome/lighthouse",
+      "stars": 30300,
+      "family": "B-visual-judge",
+      "what": "Automated web audit (Chrome team) — 0-100 across Performance/Accessibility/Best-Practices/SEO.",
+      "mechanism": "Weighted aggregate of axe-core a11y violations + perf metrics + best-practice checks -> 0-100/category. Accessibility score is deterministic rule-based.",
+      "steal": "Run Lighthouse ACCESSIBILITY 0-100 as a HARD GATE before any aesthetic score — low contrast / broken ARIA fails the warmth test by definition. Free, fast, deterministic."
+    },
+    {
+      "id": "shadcn-ui",
+      "name": "shadcn-ui/ui",
+      "url": "https://github.com/shadcn-ui/ui",
+      "stars": 82000,
+      "family": "C-registry",
+      "what": "Copy-paste component library + `shadcn add` CLI that installs components from any registry URL.",
+      "mechanism": "registry.json schema (registry:component/block/ui) + `shadcn build`. One JSON per component: type, files, dependencies, install target.",
+      "steal": "registry-item JSON CONTRACT + static /api/r/<name>.json endpoints — agents fetch, humans browse, `shadcn add <url>` just works for anything we promote."
+    },
+    {
+      "id": "design-md",
+      "name": "google-labs-code/design.md",
+      "url": "https://github.com/google-labs-code/design.md",
+      "stars": 1500,
+      "family": "C-registry",
+      "what": "Format spec for a YAML-frontmatter + Markdown DESIGN.md encoding a full design system for AI agents.",
+      "mechanism": "YAML frontmatter = machine-readable tokens; Markdown body = human rationale. One file at repo root; every agent reads it.",
+      "steal": "DESIGN.md PER SLOT — attach a tiny DESIGN.md constraint to each page slot so the forge knows the slot's visual language before first render."
+    },
+    {
+      "id": "react-scanner",
+      "name": "moroshko/react-scanner",
+      "url": "https://github.com/moroshko/react-scanner",
+      "stars": 650,
+      "family": "D-flow-dashboard",
+      "what": "CLI that walks a codebase and emits every React component + props usage as JSON.",
+      "mechanism": "Static AST walk -> JSON of components + prop usage counts.",
+      "steal": "Feed JSON into each slot's detail pane -> LIVE 'used in N places' counts from the actual cockpit code. Inventory becomes a living audit."
+    },
+    {
+      "id": "antv-x6",
+      "name": "antvis/X6",
+      "url": "https://github.com/antvis/X6",
+      "stars": 5500,
+      "family": "D-flow-dashboard",
+      "deferred": true,
+      "what": "Vanilla-JS SVG+HTML diagramming library — custom nodes, ports, events, JSON graph serialization.",
+      "mechanism": "Node + named ports + edges; click handlers per port; serializes to JSON. No React.",
+      "steal": "PORT MODEL = SLOT MODEL — click a port -> render slot detail. Only adopt if the Map needs drag-to-reconnect editing; otherwise hand-rolled HTML stays."
+    },
+    {
+      "id": "magic-mcp",
+      "name": "21st-dev/magic-mcp",
+      "url": "https://github.com/21st-dev/magic-mcp",
+      "stars": 5000,
+      "family": "E-forge-mcp",
+      "what": "MCP server generating React components from a /ui natural-language prompt, pulling from 21st.dev's library.",
+      "mechanism": "/ui <description> tool call -> generated component (registry-item shape) + file diff. Community-published components.",
+      "steal": "The /ui <description> TOOL SHAPE — agents request a component by description, get registry-item JSON + diff. Query the curated library first, adapt the closest match."
+    },
+    {
+      "id": "agent-inbox",
+      "name": "langchain-ai/agent-inbox",
+      "url": "https://github.com/langchain-ai/agent-inbox",
+      "stars": 2000,
+      "family": "E-forge-mcp",
+      "what": "Inbox UX for human-in-the-loop agents — renders rich interrupt descriptions, collects structured human responses.",
+      "mechanism": "Every agent interrupt is a typed payload; inbox renders uniformly; collects approve/reject/revise.",
+      "steal": "INTERRUPT-AS-INBOX-ITEM — every forge run emits a typed payload (screenshot URL + diff + meta). Validates our Needs-You design exactly."
+    },
+    {
+      "id": "lastest",
+      "name": "las-team/lastest",
+      "url": "https://github.com/las-team/lastest",
+      "stars": 300,
+      "family": "E-forge-mcp",
+      "what": "Visual-regression platform (pixelmatch/SSIM/Butteraugli) + AI-proposed fixes + 50-tool MCP server.",
+      "mechanism": "Perceptual diff engines + MCP tools to run tests, approve baselines, heal tests autonomously.",
+      "steal": "MCP APPROVE/REJECT PRIMITIVES (approve_baseline / reject_variation / request_revision) — Claude+Codex vote in CI through the same interface as humans."
+    },
+    {
+      "id": "abi-screenshot-to-code",
+      "name": "abi/screenshot-to-code",
+      "url": "https://github.com/abi/screenshot-to-code",
+      "stars": 72000,
+      "family": "E-forge-mcp",
+      "what": "Drop a screenshot -> clean HTML/Tailwind/React/Vue. GPT-4V / Claude Opus / video.",
+      "mechanism": "Screenshot -> structured spec -> code generation -> re-render loop.",
+      "steal": "SCREENSHOT -> SPEC -> RE-RENDER loop — the 'forge screenshot -> extract intent -> regenerate' pattern for component variation forging."
+    },
+    {
+      "id": "open-design",
+      "name": "nexu-io/open-design",
+      "url": "https://github.com/nexu-io/open-design",
+      "stars": 56700,
+      "family": "F-viewer",
+      "what": "Local-first Claude-Design alternative; agents emit HTML artifacts rendered in a sandboxed iframe.",
+      "mechanism": "<artifact> parser -> clean srcdoc iframe with navigation-click guards injected on load; card-grid surface; 5-direction picker before generation.",
+      "steal": "ARTIFACT -> srcdoc IFRAME with on-load nav guards — the canonical safe-render of agent HTML. Plus the 5-direction pre-generation picker."
+    },
+    {
+      "id": "react-compare-slider",
+      "name": "nerdyman/react-compare-slider",
+      "url": "https://github.com/nerdyman/react-compare-slider",
+      "stars": 375,
+      "family": "F-viewer",
+      "what": "Draggable slider comparing any two ReactNodes (incl. iframes) side-by-side. Zero-dep, MIT, a11y.",
+      "mechanism": "itemOne/itemTwo accept any ReactNode; browsingContext prop binds iframe events.",
+      "steal": "THE ITERATION/COMPARE VIEW — pass two <iframe srcdoc> as itemOne/itemTwo for v1-vs-v2. Drop-in."
+    },
+    {
+      "id": "reg-cli-report-ui",
+      "name": "reg-viz/reg-cli + reg-cli-report-ui",
+      "url": "https://github.com/reg-viz/reg-cli",
+      "stars": 500,
+      "family": "F-viewer",
+      "what": "Image-diff CLI + standalone HTML report gallery (pass/changed/new buckets, click-to-expand).",
+      "mechanism": "CLI writes a JSON manifest + image files -> report UI reads manifest -> renders grid. State in filesystem.",
+      "steal": "THE FOLDER->VIEWER DATA FLOW — agent drops <id>.html + <id>.meta.json -> chokidar -> SSE -> React refetches manifest -> grid. POST /api/bless/{id} writes winner.json. No DB, no polling."
+    },
+    {
+      "id": "godaddy-safe-srcdoc",
+      "name": "godaddy/react-safe-src-doc-iframe",
+      "url": "https://github.com/godaddy/react-safe-src-doc-iframe",
+      "stars": 24,
+      "family": "F-viewer",
+      "what": "React srcdoc-iframe wrapper with navigation-click guards + referrer suppression (archived, copy-pasteable).",
+      "mechanism": "On document.load: disable pointer-events on a[href]/buttons/images, sandbox=allow-same-origin only, strip referrer.",
+      "steal": "THE SAFE-RENDER RECIPE — render arbitrary agent HTML without eval/CDP leaks. The piece we were missing."
+    },
+    {
+      "id": "promptfoo-view",
+      "name": "promptfoo/promptfoo (view)",
+      "url": "https://github.com/promptfoo/promptfoo",
+      "stars": 21800,
+      "family": "F-viewer",
+      "what": "Eval CLI with a local matrix web UI: rows=variations, cols=models, cells=rendered output.",
+      "mechanism": "promptfoo eval writes JSON -> promptfoo view spins a React app reading it. Canonical agent-outputs->tabular-gallery flow.",
+      "steal": "THE MATRIX VIEWER — variations x configs grid reading a local JSON manifest. The data-flow archetype."
+    },
+    {
+      "id": "tldraw-make-real",
+      "name": "tldraw/make-real",
+      "url": "https://github.com/tldraw/make-real",
+      "stars": 5400,
+      "family": "F-viewer",
+      "what": "Draw a mockup -> LLM generates HTML -> rendered live in-canvas as an interactive iframe shape.",
+      "mechanism": "PreviewShape injects generated HTML into a custom tldraw shape's iframe; annotate + re-generate to iterate.",
+      "steal": "IN-PLACE ITERATE — render the variation where it lives, annotate on top, re-forge. The annotate-to-iterate gesture."
+    },
+    {
+      "id": "onlook",
+      "name": "onlook-dev/onlook",
+      "url": "https://github.com/onlook-dev/onlook",
+      "stars": 25900,
+      "family": "F-viewer",
+      "what": "Figma-like visual editor syncing bidirectionally with live Next.js/Tailwind code.",
+      "mechanism": "Editor is a sandboxed iframe over your dev server with a DOM-element inspector overlay wired back to source; branching for A/B.",
+      "steal": "THE GRADUATION BRIDGE pattern — the viewer is a layer over the real dev server; element-inspector maps rendered node -> source. Informs blessed-HTML->React handoff."
+    },
+    {
+      "id": "siso-design-system-viewer",
+      "name": "(internal) SISO_Knowledge/design-system/viewer",
+      "url": "local:///Users/shaansisodia/SISO_Workspace/SISO_Knowledge/design-system/viewer",
+      "stars": null,
+      "family": "F-viewer",
+      "internal": true,
+      "what": "OUR existing runnable viewer (Next.js, :3005). 2,223 components, iframe-scale cards, /pick callback, ratings.db (ELO).",
+      "mechanism": "Card.tsx:85-123 scaled-iframe render; lib/pick.ts + PickClient.tsx postMessage contract (siso:pick/siso:cancel); ratings.db tables components(elo)/comparisons/swipes/component_tags.",
+      "steal": "HARVEST 3 PROVEN PIECES: (1) iframe-scale render Card.tsx, (2) the /pick agent<->human postMessage handoff, (3) the ELO ratings.db schema. ~60% of the viewer already built."
+    }
+  ]
+}

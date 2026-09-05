@@ -1,0 +1,126 @@
+{"capability": "auth-identity", "rank": 1, "full_name": "panva/jose", "stars": 7648, "reuse_value": 88, "license": "MIT", "note": "JWT/JWS/JWE/JWK across all JS runtimes; drop-in token lib"}
+{"capability": "auth-identity", "rank": 2, "full_name": "ory/fosite", "stars": 2585, "reuse_value": 88, "license": "Apache-2.0", "note": "OAuth2 + OpenID Connect SDK for Go, security-first"}
+{"capability": "auth-identity", "rank": 3, "full_name": "lestrrat-go/jwx", "stars": 2395, "reuse_value": 85, "license": "MIT", "note": "Complete JOSE/JWx implementation for Go"}
+{"capability": "billing-payments", "rank": 1, "full_name": "activemerchant/active_merchant", "stars": 4600, "reuse_value": 88, "license": "MIT", "note": "Payment abstraction lib extracted from Shopify; many gateways"}
+{"capability": "billing-payments", "rank": 2, "full_name": "go-pay/gopay", "stars": 5630, "reuse_value": 88, "license": "Apache-2.0", "note": "Aggregate payment SDK (Stripe/PayPal/Apple/WeChat/Alipay) for Go"}
+{"capability": "billing-payments", "rank": 3, "full_name": "sendgrid/sendgrid-php", "stars": 1525, "reuse_value": 85, "license": "MIT", "note": "(billing-adjacent provider SDK) — THIN: payments coverage is mostly provider SDKs"}
+{"capability": "database-orm", "rank": 1, "full_name": "go-gorm/gorm", "stars": 39819, "reuse_value": 88, "license": "MIT", "note": "The de-facto Go ORM, developer-friendly"}
+{"capability": "database-orm", "rank": 2, "full_name": "typeorm/typeorm", "stars": 36548, "reuse_value": 88, "license": "MIT", "note": "TS/JS ORM supporting all major SQL engines"}
+{"capability": "database-orm", "rank": 3, "full_name": "realm/realm-swift", "stars": 16605, "reuse_value": 88, "license": "Apache-2.0", "note": "Embedded mobile database, Core Data replacement"}
+{"capability": "http-server-framework", "rank": 1, "full_name": "elysiajs/elysia", "stars": 18559, "reuse_value": 88, "license": "MIT", "note": "Ergonomic high-perf TS server framework (Bun)"}
+{"capability": "http-server-framework", "rank": 2, "full_name": "vapor/vapor", "stars": 26138, "reuse_value": 88, "license": "MIT", "note": "Server-side Swift HTTP framework"}
+{"capability": "http-server-framework", "rank": 3, "full_name": "walkor/workerman", "stars": 11549, "reuse_value": 88, "license": "MIT", "note": "Async event-driven PHP socket/HTTP framework"}
+{"capability": "http-client", "rank": 1, "full_name": "forwardemail/superagent", "stars": 16647, "reuse_value": 88, "license": "MIT", "note": "Small ajax/HTTP client for Node + browsers"}
+{"capability": "http-client", "rank": 2, "full_name": "OpenFeign/feign", "stars": 9784, "reuse_value": 88, "license": "Apache-2.0", "note": "Declarative Java HTTP client"}
+{"capability": "http-client", "rank": 3, "full_name": "0x676e67/wreq", "stars": 895, "reuse_value": 88, "license": "Apache-2.0", "note": "Ergonomic Rust HTTP client with TLS fingerprinting"}
+{"capability": "cache", "rank": 1, "full_name": "viccon/sturdyc", "stars": 1248, "reuse_value": 88, "license": "MIT", "note": "Caching lib with advanced concurrency for I/O-heavy apps (Go)"}
+{"capability": "cache", "rank": 2, "full_name": "microsoft/garnet", "stars": 11885, "reuse_value": 85, "license": "MIT", "note": "Remote cache-store from MS Research, Redis-protocol"}
+{"capability": "cache", "rank": 3, "full_name": "GoogleChrome/workbox", "stars": 12959, "reuse_value": 85, "license": "MIT", "note": "Service-worker caching libraries for PWAs"}
+{"capability": "queue-messaging", "rank": 1, "full_name": "ThreeDotsLabs/watermill", "stars": 9768, "reuse_value": 88, "license": "MIT", "note": "Event-driven app library for Go (pub/sub abstraction)"}
+{"capability": "queue-messaging", "rank": 2, "full_name": "segmentio/kafka-go", "stars": 8581, "reuse_value": 88, "license": "MIT", "note": "Kafka client library in Go"}
+{"capability": "queue-messaging", "rank": 3, "full_name": "dpkp/kafka-python", "stars": 5898, "reuse_value": 88, "license": "Apache-2.0", "note": "Python Kafka client"}
+{"capability": "email", "rank": 1, "full_name": "jstedfast/MailKit", "stars": 6807, "reuse_value": 85, "license": "MIT", "note": "Cross-platform .NET IMAP/POP3/SMTP library"}
+{"capability": "email", "rank": 2, "full_name": "emersion/go-imap", "stars": 2338, "reuse_value": 88, "license": "MIT", "note": "IMAP library for Go clients + servers"}
+{"capability": "email", "rank": 3, "full_name": "jstedfast/MimeKit", "stars": 1999, "reuse_value": 88, "license": "MIT", "note": ".NET MIME create/parse (S/MIME, PGP, DKIM)"}
+{"capability": "file-upload-storage", "rank": 1, "full_name": "minio/minio-go", "stars": 2960, "reuse_value": 85, "license": "Apache-2.0", "note": "MinIO/S3-compatible object storage Go client SDK"}
+{"capability": "file-upload-storage", "rank": 2, "full_name": "dromara/x-file-storage", "stars": 2187, "reuse_value": 88, "license": "Apache-2.0", "note": "One-line file storage across 15+ backends (S3/OSS/MinIO/...)"}
+{"capability": "file-upload-storage", "rank": 3, "full_name": "peak/s5cmd", "stars": 4086, "reuse_value": 88, "license": "MIT", "note": "Fast parallel S3 + local fs tool"}
+{"capability": "search", "rank": 1, "full_name": "nextapps-de/flexsearch", "stars": 13733, "reuse_value": 88, "license": "Apache-2.0", "note": "Next-gen full-text search lib for Browser + Node"}
+{"capability": "search", "rank": 2, "full_name": "asg017/sqlite-vec", "stars": 7768, "reuse_value": 85, "license": "Apache-2.0", "note": "Vector search SQLite extension, runs anywhere"}
+{"capability": "search", "rank": 3, "full_name": "elastic/elasticsearch-net", "stars": 3640, "reuse_value": 88, "license": "Apache-2.0", "note": "Official strongly-typed Elasticsearch client"}
+{"capability": "rate-limit-resilience", "rank": 1, "full_name": "bucket4j/bucket4j", "stars": 2761, "reuse_value": 85, "license": "Apache-2.0", "note": "Java token-bucket rate limiter"}
+{"capability": "rate-limit-resilience", "rank": 2, "full_name": "failsafe-go/failsafe-go", "stars": 2226, "reuse_value": 85, "license": "MIT", "note": "Fault-tolerance/resilience patterns for Go"}
+{"capability": "rate-limit-resilience", "rank": 3, "full_name": "connor4312/cockatiel", "stars": 1792, "reuse_value": 82, "license": "MIT", "note": "TS resilience lib: backoff/retry/circuit-breaker/timeout"}
+{"capability": "logging", "rank": 1, "full_name": "uber-go/zap", "stars": 24549, "reuse_value": 85, "license": "MIT", "note": "Blazing-fast structured leveled logging for Go"}
+{"capability": "logging", "rank": 2, "full_name": "Delgan/loguru", "stars": 23974, "reuse_value": 85, "license": "MIT", "note": "Python logging made stupidly simple"}
+{"capability": "logging", "rank": 3, "full_name": "pinojs/pino", "stars": 17954, "reuse_value": 85, "license": "MIT", "note": "Super-fast JSON logger for Node"}
+{"capability": "monitoring-observability", "rank": 1, "full_name": "open-telemetry/opentelemetry-java", "stars": 2409, "reuse_value": 88, "license": "Apache-2.0", "note": "OpenTelemetry Java SDK; vendor-neutral instrumentation"}
+{"capability": "monitoring-observability", "rank": 2, "full_name": "dropwizard/metrics", "stars": 7845, "reuse_value": 88, "license": "Apache-2.0", "note": "JVM + app-level metrics capture"}
+{"capability": "monitoring-observability", "rank": 3, "full_name": "metrics-rs/metrics", "stars": 1456, "reuse_value": 88, "license": "MIT", "note": "Metrics ecosystem/facade for Rust"}
+{"capability": "job-scheduler-cron", "rank": 1, "full_name": "Hexagon/croner", "stars": 2562, "reuse_value": 88, "license": "MIT", "note": "Zero-dep cron expression + trigger lib for JS/TS"}
+{"capability": "job-scheduler-cron", "rank": 2, "full_name": "oban-bg/oban", "stars": 3934, "reuse_value": 88, "license": "Apache-2.0", "note": "Robust Postgres/SQLite-backed job processing (Elixir)"}
+{"capability": "job-scheduler-cron", "rank": 3, "full_name": "go-co-op/gocron", "stars": 7077, "reuse_value": 85, "license": "MIT", "note": "Fluent Go cron scheduling"}
+{"capability": "websocket-realtime", "rank": 1, "full_name": "miguelgrinberg/python-socketio", "stars": 4355, "reuse_value": 88, "license": "MIT", "note": "Python Socket.IO server + client"}
+{"capability": "websocket-realtime", "rank": 2, "full_name": "walkor/workerman", "stars": 11549, "reuse_value": 88, "license": "MIT", "note": "PHP socket framework w/ WebSocket/SSL support"}
+{"capability": "websocket-realtime", "rank": 3, "full_name": "socketio/socket.io", "stars": null, "reuse_value": 75, "license": "MIT", "note": "(JS realtime baseline — in gold set lower band)"}
+{"capability": "validation-schema", "rank": 1, "full_name": "validatorjs/validator.js", "stars": 23744, "reuse_value": 88, "license": "MIT", "note": "String validation/sanitization lib"}
+{"capability": "validation-schema", "rank": 2, "full_name": "samchon/typia", "stars": 5837, "reuse_value": 85, "license": "MIT", "note": "Super-fast runtime validators + serializers via TS transform"}
+{"capability": "validation-schema", "rank": 3, "full_name": "CuyZ/Valinor", "stars": 1512, "reuse_value": 88, "license": "MIT", "note": "Maps any input into strongly-typed PHP structures"}
+{"capability": "config-secrets", "rank": 1, "full_name": "theskumar/python-dotenv", "stars": 8804, "reuse_value": 85, "license": "BSD-3-Clause", "note": "Reads .env into environment variables (Python)"}
+{"capability": "config-secrets", "rank": 2, "full_name": "dotenvx/dotenvx", "stars": 5555, "reuse_value": 80, "license": "BSD-3-Clause", "note": "Secure dotenv successor with encryption"}
+{"capability": "config-secrets", "rank": 3, "full_name": "sloria/environs", "stars": 1367, "reuse_value": 85, "license": "MIT", "note": "Simplified env-var parsing"}
+{"capability": "feature-flags", "rank": 1, "full_name": "flippercloud/flipper", "stars": 3953, "reuse_value": 80, "license": "MIT", "note": "Beautiful performant feature flags (Ruby)"}
+{"capability": "feature-flags", "rank": 2, "full_name": "thomaspoignant/go-feature-flag", "stars": 2043, "reuse_value": 80, "license": "MIT", "note": "Lightweight self-hosted feature-flag lib for Go"}
+{"capability": "feature-flags", "rank": 3, "full_name": null, "stars": null, "reuse_value": null, "license": null, "note": "THIN: only ~13 gold; mostly Ruby/Go; gaps for JS/Python native"}
+{"capability": "state-machine", "rank": 1, "full_name": "chakra-ui/zag", "stars": 5121, "reuse_value": 80, "license": "MIT", "note": "Finite-state-machine UI primitives, framework-agnostic"}
+{"capability": "state-machine", "rank": 2, "full_name": "Inspiaaa/UnityHFSM", "stars": 1582, "reuse_value": 82, "license": "MIT", "note": "Hierarchical FSM lib (Unity)"}
+{"capability": "state-machine", "rank": 3, "full_name": "limbonaut/limboai", "stars": 2818, "reuse_value": 85, "license": "MIT", "note": "Behavior trees + state machines (Godot)"}
+{"capability": "workflow-orchestration", "rank": 1, "full_name": "microsoft/agent-framework", "stars": 11572, "reuse_value": 88, "license": "MIT", "note": "Build/orchestrate/deploy multi-agent workflows"}
+{"capability": "workflow-orchestration", "rank": 2, "full_name": "PrefectHQ/prefect", "stars": 22667, "reuse_value": 85, "license": "Apache-2.0", "note": "Python workflow orchestration for data pipelines"}
+{"capability": "workflow-orchestration", "rank": 3, "full_name": "dagster-io/dagster", "stars": 15735, "reuse_value": 85, "license": "Apache-2.0", "note": "Orchestration platform for data assets"}
+{"capability": "cryptography", "rank": 1, "full_name": "golang/crypto", "stars": 3323, "reuse_value": 85, "license": "BSD-3-Clause", "note": "Go supplementary cryptography libraries"}
+{"capability": "cryptography", "rank": 2, "full_name": "hacl-star/hacl-star", "stars": 1831, "reuse_value": 88, "license": "Apache-2.0", "note": "Formally-verified crypto primitives"}
+{"capability": "cryptography", "rank": 3, "full_name": "dromara/dongle", "stars": 1107, "reuse_value": 88, "license": "MIT", "note": "Developer-friendly crypto package for Go"}
+{"capability": "i18n-localization", "rank": 1, "full_name": "i18next/i18next", "stars": 8588, "reuse_value": 88, "license": "MIT", "note": "learn once translate everywhere; the JS i18n standard"}
+{"capability": "i18n-localization", "rank": 2, "full_name": "lingui/js-lingui", "stars": 5792, "reuse_value": 85, "license": "MIT", "note": "Readable automated optimized i18n for JS"}
+{"capability": "i18n-localization", "rank": 3, "full_name": "projectfluent/fluent-rs", "stars": 1333, "reuse_value": 88, "license": "Apache-2.0", "note": "Rust implementation of Project Fluent l10n"}
+{"capability": "compression", "rank": 1, "full_name": "oxipng/oxipng", "stars": 4032, "reuse_value": 85, "license": "MIT", "note": "Multithreaded PNG optimizer (Rust)"}
+{"capability": "compression", "rank": 2, "full_name": "RoaringBitmap/roaring", "stars": 2898, "reuse_value": 85, "license": "Apache-2.0", "note": "Compressed bitmaps (Go), used by InfluxDB/Bleve"}
+{"capability": "compression", "rank": 3, "full_name": "libjxl/libjxl", "stars": 3544, "reuse_value": 85, "license": "BSD-3-Clause", "note": "JPEG XL reference impl (image codec)"}
+{"capability": "data-serialization", "rank": 1, "full_name": "tokio-rs/prost", "stars": 4718, "reuse_value": 85, "license": "Apache-2.0", "note": "Protocol Buffers for Rust"}
+{"capability": "data-serialization", "rank": 2, "full_name": "buger/jsonparser", "stars": 5629, "reuse_value": 85, "license": "MIT", "note": "Fastest schema-less JSON parser for Go"}
+{"capability": "data-serialization", "rank": 3, "full_name": "Kotlin/kotlinx.serialization", "stars": 5929, "reuse_value": 88, "license": "Apache-2.0", "note": "Kotlin multiplatform multi-format serialization"}
+{"capability": "vector-db-embeddings", "rank": 1, "full_name": "asg017/sqlite-vec", "stars": 7768, "reuse_value": 85, "license": "Apache-2.0", "note": "Embeddable vector search SQLite extension"}
+{"capability": "vector-db-embeddings", "rank": 2, "full_name": "neuml/txtai", "stars": 12675, "reuse_value": 88, "license": "Apache-2.0", "note": "All-in-one embeddings/semantic-search framework"}
+{"capability": "vector-db-embeddings", "rank": 3, "full_name": "FlagOpen/FlagEmbedding", "stars": 11850, "reuse_value": 85, "license": "MIT", "note": "Retrieval + RAG embedding models"}
+{"capability": "image-processing", "rank": 1, "full_name": "libjxl/libjxl", "stars": 3544, "reuse_value": 85, "license": "BSD-3-Clause", "note": "Image codec reference impl (JPEG XL)"}
+{"capability": "image-processing", "rank": 2, "full_name": "AcademySoftwareFoundation/OpenImageIO", "stars": 2310, "reuse_value": 85, "license": "Apache-2.0", "note": "Read/write/process images, format-agnostic API"}
+{"capability": "image-processing", "rank": 3, "full_name": "oxipng/oxipng", "stars": 4032, "reuse_value": 85, "license": "MIT", "note": "PNG optimizer — THIN: image-proc gold is sparse, mostly codecs"}
+{"capability": "pdf-documents", "rank": 1, "full_name": "jsvine/pdfplumber", "stars": 10445, "reuse_value": 88, "license": "MIT", "note": "Detailed PDF text/table extraction (Python)"}
+{"capability": "pdf-documents", "rank": 2, "full_name": "Kozea/WeasyPrint", "stars": 9314, "reuse_value": 85, "license": "BSD-3-Clause", "note": "HTML/CSS to PDF document factory"}
+{"capability": "pdf-documents", "rank": 3, "full_name": "camelot-dev/camelot", "stars": 3759, "reuse_value": 88, "license": "MIT", "note": "Extract tabular data from PDFs"}
+{"capability": "qr-barcode", "rank": 1, "full_name": "Shane32/QRCoder", "stars": 5140, "reuse_value": 85, "license": "MIT", "note": "Pure C# QR code generator"}
+{"capability": "qr-barcode", "rank": 2, "full_name": "nimiq/qr-scanner", "stars": 2874, "reuse_value": 82, "license": "MIT", "note": "Lightweight JS QR scanner"}
+{"capability": "qr-barcode", "rank": 3, "full_name": "skip2/go-qrcode", "stars": 3000, "reuse_value": 80, "license": "MIT", "note": "QR encoder for Go"}
+{"capability": "web-scraping", "rank": 1, "full_name": "D4Vinci/Scrapling", "stars": 65678, "reuse_value": 88, "license": "BSD-3-Clause", "note": "Adaptive web-scraping framework"}
+{"capability": "web-scraping", "rank": 2, "full_name": "adbar/trafilatura", "stars": 6173, "reuse_value": 88, "license": "Apache-2.0", "note": "Web text + metadata extraction (Python/CLI)"}
+{"capability": "web-scraping", "rank": 3, "full_name": "0x676e67/wreq", "stars": 895, "reuse_value": 88, "license": "Apache-2.0", "note": "Rust HTTP client with TLS fingerprinting (anti-bot)"}
+{"capability": "ui-component-kit", "rank": 1, "full_name": "remarkjs/react-markdown", "stars": 15779, "reuse_value": 88, "license": "MIT", "note": "Markdown rendering component for React"}
+{"capability": "ui-component-kit", "rank": 2, "full_name": "tabulator-tables/tabulator", "stars": 7695, "reuse_value": 88, "license": "MIT", "note": "Interactive tables/data grids (vanilla JS)"}
+{"capability": "ui-component-kit", "rank": 3, "full_name": "buefy/buefy", "stars": 9529, "reuse_value": 88, "license": "MIT", "note": "Lightweight Vue UI components (Bulma)"}
+{"capability": "web-ui-framework", "rank": 1, "full_name": "lit/lit", "stars": 21678, "reuse_value": 88, "license": "BSD-3-Clause", "note": "Simple fast web-components library"}
+{"capability": "web-ui-framework", "rank": 2, "full_name": "react-grid-layout/react-grid-layout", "stars": 22325, "reuse_value": 88, "license": "MIT", "note": "Draggable/resizable responsive grid for React"}
+{"capability": "web-ui-framework", "rank": 3, "full_name": "umijs/qiankun", "stars": 16617, "reuse_value": 88, "license": "MIT", "note": "Micro-frontends solution"}
+{"capability": "data-viz-charts", "rank": 1, "full_name": "mermaid-js/mermaid", "stars": 88795, "reuse_value": 85, "license": "MIT", "note": "Text-to-diagram (flowcharts/sequence/etc.)"}
+{"capability": "data-viz-charts", "rank": 2, "full_name": "ant-design/ant-design-charts", "stars": 2228, "reuse_value": 88, "license": "MIT", "note": "React chart library (plot/graph/map)"}
+{"capability": "data-viz-charts", "rank": 3, "full_name": "vasturiano/react-globe.gl", "stars": 1404, "reuse_value": 88, "license": "MIT", "note": "3D globe data-viz React component"}
+{"capability": "animation", "rank": 1, "full_name": "3b1b/manim", "stars": 87817, "reuse_value": 85, "license": "MIT", "note": "Programmatic animation engine (explanatory math)"}
+{"capability": "animation", "rank": 2, "full_name": "annulusgames/LitMotion", "stars": 2173, "reuse_value": 88, "license": "MIT", "note": "Zero-alloc tween library (Unity)"}
+{"capability": "animation", "rank": 3, "full_name": "LegendApp/legend-state", "stars": null, "reuse_value": 75, "license": "MIT", "note": "(motion-adjacent) — THIN for web-CSS animation; mostly game tweens"}
+{"capability": "testing-mocking", "rank": 1, "full_name": "puppeteer/puppeteer", "stars": 95205, "reuse_value": 88, "license": "Apache-2.0", "note": "Headless Chrome/Firefox automation API"}
+{"capability": "testing-mocking", "rank": 2, "full_name": "chromedp/chromedp", "stars": 13137, "reuse_value": 88, "license": "MIT", "note": "Drive browsers via Chrome DevTools Protocol (Go)"}
+{"capability": "testing-mocking", "rank": 3, "full_name": "forwardemail/supertest", "stars": 14371, "reuse_value": 82, "license": "MIT", "note": "Fluent HTTP-server testing lib for Node"}
+{"capability": "concurrency-async", "rank": 1, "full_name": "immutable-js/immutable-js", "stars": 33059, "reuse_value": 88, "license": "MIT", "note": "Immutable persistent collections for JS"}
+{"capability": "concurrency-async", "rank": 2, "full_name": "embassy-rs/embassy", "stars": 9431, "reuse_value": 88, "license": "Apache-2.0", "note": "Async embedded framework (Rust)"}
+{"capability": "concurrency-async", "rank": 3, "full_name": "ag2ai/faststream", "stars": 5245, "reuse_value": 82, "license": "Apache-2.0", "note": "Async event-driven Python framework"}
+{"capability": "templating-engine", "rank": 1, "full_name": "Keats/tera", "stars": 4235, "reuse_value": 88, "license": "MIT", "note": "Jinja2/Django-style template engine (Rust)"}
+{"capability": "templating-engine", "rank": 2, "full_name": "mitsuhiko/minijinja", "stars": 2660, "reuse_value": 85, "license": "Apache-2.0", "note": "Minimal-dependency Jinja2-compatible engine (Rust)"}
+{"capability": "templating-engine", "rank": 3, "full_name": "Python-Markdown/markdown", "stars": 4213, "reuse_value": 85, "license": "BSD-3-Clause", "note": "Markdown->HTML with extensions (Python)"}
+{"capability": "di-ioc", "rank": 1, "full_name": "uber-go/fx", "stars": 7583, "reuse_value": 88, "license": "MIT", "note": "DI-based application framework for Go"}
+{"capability": "di-ioc", "rank": 2, "full_name": "ZacSweers/metro", "stars": 1291, "reuse_value": 85, "license": "Apache-2.0", "note": "Compile-time DI for Kotlin multiplatform"}
+{"capability": "di-ioc", "rank": 3, "full_name": null, "stars": null, "reuse_value": null, "license": null, "note": "THIN: ~37 gold; JVM/Go heavy, sparse for JS/Python"}
+{"capability": "llm-app-framework", "rank": 1, "full_name": "mem0ai/mem0", "stars": 59177, "reuse_value": 88, "license": "Apache-2.0", "note": "Universal memory layer for AI agents"}
+{"capability": "llm-app-framework", "rank": 2, "full_name": "getzep/graphiti", "stars": 27732, "reuse_value": 88, "license": "Apache-2.0", "note": "Real-time knowledge graphs for AI agents"}
+{"capability": "llm-app-framework", "rank": 3, "full_name": "langchain4j/langchain4j", "stars": 12400, "reuse_value": 88, "license": "Apache-2.0", "note": "Idiomatic LLM-app library for the JVM"}
+{"capability": "agent-tooling", "rank": 1, "full_name": "datalayer/jupyter-mcp-server", "stars": 1172, "reuse_value": 88, "license": "BSD-3-Clause", "note": "MCP server for Jupyter; clean liftable MCP reference"}
+{"capability": "agent-tooling", "rank": 2, "full_name": "zeroclaw-labs/zeroclaw", "stars": 32003, "reuse_value": 88, "license": "Apache-2.0", "note": "Autonomous assistant infra, cross-OS"}
+{"capability": "agent-tooling", "rank": 3, "full_name": "anomalyco/opencode", "stars": 177536, "reuse_value": 85, "license": "MIT", "note": "Open-source coding agent (reference, large)"}
+{"capability": "proxy-tunnel", "rank": 1, "full_name": "shadowsocks/shadowsocks-rust", "stars": 10729, "reuse_value": 88, "license": "MIT", "note": "Rust shadowsocks proxy"}
+{"capability": "proxy-tunnel", "rank": 2, "full_name": "vicanso/pingap", "stars": 1281, "reuse_value": 88, "license": "Apache-2.0", "note": "Lightweight reverse proxy on pingora"}
+{"capability": "proxy-tunnel", "rank": 3, "full_name": "traefik/traefik", "stars": 63703, "reuse_value": 85, "license": "MIT", "note": "Cloud-native application proxy (large)"}
+{"capability": "video-audio-codec", "rank": 1, "full_name": "ffmpegwasm/ffmpeg.wasm", "stars": 17624, "reuse_value": 88, "license": "MIT", "note": "FFmpeg in the browser via WASM"}
+{"capability": "video-audio-codec", "rank": 2, "full_name": "PyAV-Org/PyAV", "stars": 3229, "reuse_value": 85, "license": "BSD-3-Clause", "note": "Pythonic bindings to FFmpeg libraries"}
+{"capability": "video-audio-codec", "rank": 3, "full_name": "shaka-project/shaka-player", "stars": 8120, "reuse_value": 85, "license": "Apache-2.0", "note": "DASH/HLS adaptive media player"}
+{"capability": "client-sdk-generic", "rank": 1, "full_name": "urfave/cli", "stars": 24132, "reuse_value": 88, "license": "MIT", "note": "Declarative CLI-building package (Go)"}
+{"capability": "client-sdk-generic", "rank": 2, "full_name": "ranaroussi/yfinance", "stars": 24370, "reuse_value": 88, "license": "Apache-2.0", "note": "Yahoo Finance market-data client (Python)"}
+{"capability": "client-sdk-generic", "rank": 3, "full_name": "akfamily/akshare", "stars": 20608, "reuse_value": 88, "license": "MIT", "note": "Financial-data interface library (Python)"}

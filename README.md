@@ -1,0 +1,56 @@
+# SISO Repo Bank
+
+The GitHub reuse index behind our agents: which repositories are worth lifting, for what capability, under what licence, and how much the world actually depends on them. Built from a 1.36M-repo identity database that is too large to publish; this repo carries the **derived, queryable banks** an agent can use in one command.
+
+| Layer | Rows | What it is |
+|---|---:|---|
+| `bank/category.jsonl` | 264 | The frozen 3-level taxonomy (slug, definition, positive/negative rules). Everything else keys into it. |
+| `bank/bank_best.jsonl` | 23,778 | **Start here.** One row per repo: best category, normalised `capability_tag` (105 tags), one-line app-builder summary, `reuse_value`, stars, licence, language, `rank_score`. |
+| `bank/bank_gold.jsonl` | 29,940 | Gold placements with `reuse_value`, `info_value`, and a `why` line per (repo, category). A repo can appear under more than one category. |
+| `bank/bank_liftable_ranked.jsonl` | 32,137 | Ranked by liftability: `unit_class` (library / service / app / pattern...), `liftability`, `fame_gap` (real dependence vs stars). |
+| `bank/bank_capability_top.jsonl` | 126 | The top picks per capability (`auth-identity` → `panva/jose`, ...). The fast answer to "what's the best X". |
+| `bank/bank_capability.jsonl` | 51 | The capability vocabulary. |
+| `bank/bank_contractcard.jsonl` | 70 | Deep "contract cards": provides / requires / assumptions / recipe / smoke test / trust rung, for repos we actually tried to lift. |
+| `bank/bank_adoption_v2.jsonl` | 2,722 | Package-registry adoption: downloads, dependent repos and packages, `reach_percentile`, `adoption_score`, `fame_gap`, verdict. |
+| `bank/bank_agent_pattern.jsonl` | 62 | Reusable patterns mined from coding-agent repos (system prompts, tool schemas, sub-agent metadata). |
+| `bank/repo_category.jsonl.gz` | 226,968 | The full placement table (210,991 distinct repos) with confidence, dual-axis value, `saucy` flag, unit class, legal lane. Gzipped, 97 MB raw. |
+| `github-farm/` | 56,674 | The star-tiered GitHub URL farm the identity DB was seeded from: every repo above 1k stars (complete tiers), plus 1k samples of the 500-1k and 100-500 bands. `all_urls.csv` is the flat list. `farm_github_urls.mjs` regenerates it via `gh api graphql`. |
+| `capability-shelf/source-registry.jsonl` | 3,010 | A client-shaped shelf: source systems (product bases like Chatwoot, blocks, patterns) with capability families, observed facts, qualification status and `priority_score`. Client names and evidence paths scrubbed. |
+| `prior-art/ui-prior-art.json` | 33 | Curated prior-art manifest for an agent-native UI base, in 6 families, with why-it-matters notes. |
+
+## Quick start for an agent
+
+```bash
+# "What's the best library for X?"
+jq -c 'select(.capability=="auth-identity")' bank/bank_capability_top.jsonl
+
+# "Show me reusable, permissive, high-reuse repos in a category"
+jq -c 'select(.category_slug=="embedded-storage-library" and .reuse_value>=80 and (.license|test("MIT|Apache")))' bank/bank_best.jsonl | head
+
+# "Is this repo famous or actually depended on?"
+jq -c 'select(.full_name=="panva/jose")' bank/bank_adoption_v2.jsonl
+
+# "What's the taxonomy?"
+jq -r 'select(.level==0) | "\(.slug): \(.definition[:120])"' bank/category.jsonl
+
+# Full placement table when you need every category a repo sits in
+gunzip -c bank/repo_category.jsonl.gz | jq -c 'select(.full_name=="chatwoot/chatwoot")'
+```
+
+Query, take the top handful, then go read the actual repo. Never load a whole bank into an agent's context.
+
+## How the values were produced
+
+- **Category placement** was done by reading each repo's README against the frozen taxonomy definitions (`why` records what the reader saw). Confidence is 0-100.
+- **reuse_value / info_value** are a dual-axis rating: how much of the repo can be lifted into a product vs how much you learn from reading it. Bands are 65-88 for gold.
+- **liftability / unit_class** classify what kind of thing the repo is (library, service, app, pattern, dataset) and how cleanly it detaches.
+- **adoption / fame_gap** join package registries (npm, PyPI, crates, ...) to measure real dependence. A high `fame_gap` means stars without dependants.
+- **legal_lane** is a first-pass licence classification. Always read the LICENSE file; a permissive badge on the repo root does not mean the directory you want is permissive.
+
+The source database (`repo_card` 1,358,200 rows, ~1.9 GB SQLite) is not published. Everything here was exported read-only from it on 2026-09-05.
+
+## Related
+
+- [unfuck-the-project](https://github.com/sisodias/unfuck-the-project): the whole-project ownership prompt these banks are a source layer for.
+- [siso-component-bank](https://github.com/sisodias/siso-component-bank): the sibling bank of 8,538 UI components with source.
+- [siso-foundry](https://github.com/sisodias/siso-foundry): the pipelines that build the identity database.
