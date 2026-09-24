@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>repo catalog</title></head>
+<body>
+  <main>
+    <h1>Repo Catalog</h1>
+    <p>Append-only raw repo observations plus identity resolution.</p>
+    <ul>
+      <li><code>raw/</code>: append-only JSONL rounds. Historical import is <code>round-0000.jsonl</code>.</li>
+      <li><code>identity/</code>: SQLite identity store keyed by GitHub node ID when known, otherwise provisional normalized URL hashes.</li>
+      <li><code>staging/</code>: future promotion candidates, empty in Phase 2.</li>
+      <li><code>curated/</code>: future gated curated sink, empty in Phase 2.</li>
+    </ul>
+    <p>Never delete raw observations. Dedupe is represented by identity and provenance rows, not by overwriting history.</p>
+  </main>
+</body>
+</html>

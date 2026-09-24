@@ -1,0 +1,32 @@
+{
+  "_doc": "Phase 3 discovery-lane config. Each category = the artifact-class seeds the campaign harvests. Edit freely; harvest runner reads this. Topic slugs feed `gh search repos topic:<slug>`; queries feed sourcegraph + gh keyword lanes. Star floors per tier: A>5000 B>500 C>50.",
+  "version": 1,
+  "star_floors": { "A": 5000, "B": 500, "C": 50 },
+  "categories": {
+    "agency-staff-automation": {
+      "topics": ["automation", "rpa", "crm", "no-code", "workflow-automation", "zapier", "make-automation", "business-automation"],
+      "gh_queries": ["agency automation", "client onboarding automation", "proposal generator", "invoice automation", "outreach automation", "cold email automation"],
+      "sg_queries": ["\"sendCampaign\" lang:TypeScript", "\"automation\" \"webhook\" \"crm\""]
+    },
+    "ai-coding-agents": {
+      "topics": ["ai-agents", "llm-agents", "autonomous-agents", "mcp", "coding-agent", "agentic-ai", "multi-agent", "llm-tools"],
+      "gh_queries": ["ai coding agent", "autonomous coding agent", "llm agent framework", "mcp server", "agent orchestration", "subagent swarm"],
+      "sg_queries": ["\"registerTool\" \"agent\" lang:TypeScript", "file:package.json \"mcp\" \"server\""]
+    },
+    "prompt-engineering": {
+      "topics": ["prompt-engineering", "prompts", "llmops", "prompt-optimization", "prompt-library", "system-prompt", "few-shot"],
+      "gh_queries": ["prompt engineering library", "system prompt collection", "prompt optimization", "llm eval framework", "awesome prompts"],
+      "sg_queries": ["\"systemPrompt\" \"template\" lang:TypeScript", "file:prompts \"role\" \"content\""]
+    },
+    "research-packets": {
+      "topics": ["rag", "web-scraping", "knowledge-graph", "deep-research", "retrieval-augmented-generation", "vector-search", "web-search"],
+      "gh_queries": ["deep research agent", "rag pipeline", "web scraping agent", "knowledge graph builder", "research assistant llm"],
+      "sg_queries": ["\"retriever\" \"embedding\" lang:Python", "\"deep research\" \"synthesize\""]
+    },
+    "reusable-agency-code": {
+      "topics": ["nextjs", "shadcn-ui", "saas-boilerplate", "tailwindcss", "convex", "dashboard", "saas-starter", "react-components"],
+      "gh_queries": ["nextjs saas boilerplate", "shadcn dashboard template", "convex starter", "agency website template", "react admin dashboard"],
+      "sg_queries": ["file:package.json \"next\" \"@shadcn\"", "\"convex\" \"schema\" lang:TypeScript"]
+    }
+  }
+}

@@ -1,1 +1,12 @@
 .DS_Store
+
+# catalog-pipeline (moved from SISO_Agent_Base/research/repo-catalog, 2026-09-24): code is tracked; the corpus and
+# generated pages are backed up encrypted by the siso-estate data plane "repo-bank-corpus"
+catalog-pipeline/identity/
+catalog-pipeline/raw/
+catalog-pipeline/staging/
+catalog-pipeline/*.log
+catalog-pipeline/.*.pid
+catalog-pipeline/.*.lock
+catalog-pipeline/foundry_browser.html
+catalog-pipeline/e4_download_manifest.html
